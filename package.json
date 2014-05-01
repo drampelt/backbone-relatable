@@ -1,0 +1,19 @@
+{
+  "name": "backbone-relatable",
+  "version": "0.0.1",
+  "description": "Backbone model relations using coffeescript class annotations",
+  "main": "dist/backbone-relatable.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drampelt/backbone-relatable.git"
+  },
+  "author": "Daniel Rampelt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drampelt/backbone-relatable/issues"
+  },
+  "homepage": "https://github.com/drampelt/backbone-relatable"
+}
