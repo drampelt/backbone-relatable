@@ -1,0 +1,18 @@
+{
+  "name": "backbone-relatable",
+  "version": "0.0.1",
+  "homepage": "https://github.com/drampelt/backbone-relatable",
+  "authors": [
+    "Daniel Rampelt <drampelt@gmail.com>"
+  ],
+  "description": "Backbone model relations using coffeescript class annotations",
+  "main": "dist/backbone-relatable.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
