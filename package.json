@@ -25,6 +25,7 @@
     "gulp-coffee": "~1.4.2",
     "gulp-plumber": "~0.6.1",
     "gulp-connect": "~2.0.5",
-    "gulp-watch": "~0.6.4"
+    "gulp-watch": "~0.6.4",
+    "gulp-mocha-phantomjs": "~0.2.0"
   }
 }

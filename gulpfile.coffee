@@ -39,9 +39,9 @@ gulp.task 'server', ['scripts', 'html', 'components'], ->
     port: 5732
     livereload: true
 
-gulp.task 'test', ['clean', 'scripts', 'html', 'components', 'server']
+gulp.task 'test-deps', ['clean', 'scripts', 'html', 'components']
 
-gulp.task 'test-browser', ['test'], ->
+gulp.task 'test-browser', ['test-deps', 'server'], ->
   $.watch glob: paths.test.scripts, (files) ->
     files
       .pipe $.plumber()
@@ -53,3 +53,7 @@ gulp.task 'test-browser', ['test'], ->
     files
       .pipe gulp.dest paths.tmp
       .pipe $.connect.reload()
+
+gulp.task 'test', ['test-deps'], ->
+  gulp.src paths.tmp + '/index.html'
+    .pipe $.mochaPhantomjs()
